@@ -374,20 +374,21 @@ aside li i {
     border-radius: 20px;
 }
 
-.services {
+.projects {
     color: white;
     display: grid;
     grid-template-columns: repeat(3, calc(34% - 10px));
     grid-template-rows: 100px calc(50% - 50px) calc(50% - 50px);
-    padding: 100px ;
+    padding: 100px;
     box-sizing: border-box;
 }
 
-.services .heading {
-    grid-column: 1/span 3;
+.projects .heading {
+    grid-column: 1 / span 3;
 }
 
-.services .service {
+/* Project Card */
+.projects .project {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -398,28 +399,38 @@ aside li i {
     backdrop-filter: blur(10px);
     flex-direction: column;
 
+    text-decoration: none;
+    color: inherit;
+
     transition-duration: 0.25s;
 }
 
-.services .service i {
+/* Icons */
+.projects .project i {
     font-size: 3rem;
-    color:#80ed99
+    color: #80ed99;
 }
 
-.services .service .service-icon {
+.projects .project .project-icon {
     padding: 0px 50px;
     border-radius: 5px;
     margin: 20px auto;
 }
-.service h2{
-    color:#80ed99
+
+/* Title */
+.project h2 {
+    color: #80ed99;
 }
-.service:hover {
+
+/* Hover Effect */
+.project:hover {
     background-color: #80ed99;
-    color: #176d2d
+    color: #176d2d;
 }
-.service:hover h2,.service:hover i{
-    color: #176d2d
+
+.project:hover h2,
+.project:hover i {
+    color: #176d2d;
 }
 
 .gallery {
